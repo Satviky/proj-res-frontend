@@ -36,7 +36,6 @@ const PhoneScreen = () => {
       const date = now.getDate();
       const month = now.getMonth()+1;
       const year = now.getFullYear();
-      // setCurrentDate(`${day}, ${date}`);
       dateContainer.textContent = `${day},${date}`;
       
     };
