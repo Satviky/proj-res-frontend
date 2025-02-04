@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import epg from './4o4'
 import './styles.css'
 import batfull from '../svgs/batfull.svg';
 import batmid2 from '../svgs/batmid2.svg';
@@ -83,7 +85,7 @@ const PhoneScreen = () => {
       )}
       {
         <div>
-          
+
         </div>
       }
       {
@@ -91,7 +93,9 @@ const PhoneScreen = () => {
           <div>
             <div className="mt-4 grid grid-cols-4 gap-4">
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <img src={la} alt='locked app' />
+              <a href="4o4">
+                  <img src={la} alt='locked app' />
+              </a>
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
                 <img src={la} alt='locked app' />
