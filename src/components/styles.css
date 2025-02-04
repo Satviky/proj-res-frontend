@@ -12,13 +12,14 @@
     overflow: hidden;
 }
 
-/* .app-bg {
-    background-color: #121212;
-} */
 
 .app-icon {
     background-color: #FFFAFA;
     border-color: goldenrod;
     border-style: solid;
     border-width: 2px;
+}
+
+.s-l{
+    background: center no-repeat url('../images/logo-d.png');
 }
