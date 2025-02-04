@@ -30,11 +30,11 @@ const PhoneScreen = () => {
       } else if (batl <= 25) {
         setBatteryLevel('low')
       }
-// document.getElementById('bat-low').style.display = batl <= 25 ? 'block' : 'none';
+      // document.getElementById('bat-low').style.display = batl <= 25 ? 'block' : 'none';
     };
 
     setInterval(updateTime, 1000);
-    updateTime(); 
+    updateTime();
 
     navigator.getBattery().then(updateBattery).catch((error) => {
       console.log("Error: " + error);
@@ -70,11 +70,19 @@ const PhoneScreen = () => {
         </div>
       </div>
       {notificationVisible && (
-        <div className="notification bg-blue-600 text-white px-4 py-2 mt-4 rounded cursor-pointer" onClick={handleNotificationClick}>
-          New message from Orion
+        <div className="notification bg-blue-600 text-white px-4 py-2 mt-4 rounded cursor-pointer absolute top-8" onClick={handleNotificationClick}>
+          New message from Unknown
         </div>
       )}
-      {!notificationVisible && <div className="text-center mt-4">Phone apps will be displayed here</div>}
+      {(notificationVisible || !notificationVisible) && <div className="app-a text-center mt-4">
+        This is app container
+      </div>}
+      {(
+        <div className='grid grid-cols-4 gap-5 bg-black-400'>
+          app Hot-bar
+        </div>
+      )}
+
     </div>
   );
 };
