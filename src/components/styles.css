@@ -4,14 +4,10 @@
 
 
 .phone-screen {
-    display: flex;
-    flex-direction: column;
     width: 360px;
-    height: 95vh;
-    background: #f5f5f5;
+    background: center no-repeat url(../images/nezuko-butterfly.jpg);
+    background-size: cover;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px;
     margin: auto;
     overflow: hidden;
 }
