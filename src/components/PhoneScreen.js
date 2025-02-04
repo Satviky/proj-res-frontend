@@ -79,59 +79,59 @@ const PhoneScreen = () => {
         </div>
       )}
       {
-        // (notificationVisible || !notificationVisible) && 
-        <div>
-          <div className="mt-4 grid grid-cols-4 gap-4 bg-purple-800">
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>1</span>
-            </div>
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>2</span>
-            </div>
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>3</span>
-            </div>
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>4</span>
-            </div>
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>5</span>
-            </div>
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>6</span>
-            </div>
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>7</span>
-            </div>
-            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <span>8</span>
+        <div className='lower-half absolute bottom-2'>
+          <div>
+            <div className="mt-4 grid grid-cols-4 gap-4 bg-purple-800">
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>1</span>
+              </div>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>2</span>
+              </div>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>3</span>
+              </div>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>4</span>
+              </div>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>5</span>
+              </div>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>6</span>
+              </div>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>7</span>
+              </div>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
+                <span>8</span>
+              </div>
             </div>
           </div>
-        </div>
 
-      }
-      {
-        <div className="mt-4 flex justify-center align-middle">
-        <img src={d1} alt='dot'/>
-      </div>
-      }
-      {
-        <div className="grid grid-cols-4 gap-4 mt-4 absolute bottom-2">
-          <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
-            <img src={nxs} alt="Phone Icon" />
-            {/* <span>Nexus</span> */}
+          {/* Separator */}
+          <div className="mt-4 flex justify-center align-middle">
+            <img src={d1} alt='dot' />
           </div>
-          <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
-            <img src={search} alt="Search Icon" />
-            {/* <span>Browser</span> */}
-          </div>
-          <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
-            <img src={messagesic} alt="Messaging app Icon" />
-            {/* <span>message</span> */}
-          </div>
-          <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
-            <img src={ph} alt="Phone Icon" />
-            {/* <span>Phone</span> */}
+
+          {/* separator */}
+          <div className="grid grid-cols-4 gap-4 mt-4">
+            <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
+              <img src={nxs} alt="Phone Icon" />
+              {/* <span>Nexus</span> */}
+            </div>
+            <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
+              <img src={search} alt="Search Icon" />
+              {/* <span>Browser</span> */}
+            </div>
+            <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
+              <img src={messagesic} alt="Messaging app Icon" />
+              {/* <span>message</span> */}
+            </div>
+            <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
+              <img src={ph} alt="Phone Icon" />
+              {/* <span>Phone</span> */}
+            </div>
           </div>
         </div>
       }
