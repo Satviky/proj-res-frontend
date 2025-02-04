@@ -80,3 +80,5 @@ const PhoneScreen = () => {
 };
 
 export default PhoneScreen;
+
+// rm -rf node_modules
