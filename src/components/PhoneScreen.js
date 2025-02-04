@@ -82,6 +82,9 @@ const PhoneScreen = () => {
         </div>
       )}
       {
+        <div></div>
+      }
+      {
         <div className='lower-half absolute bottom-2'>
           <div>
             <div className="mt-4 grid grid-cols-4 gap-4">
