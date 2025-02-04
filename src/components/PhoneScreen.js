@@ -8,6 +8,7 @@ import search from '../svgs/search.svg';
 import messagesic from '../svgs/messages.svg'
 import ph from '../svgs/phone.svg'
 import nxs from '../svgs/nexus.svg'
+import d1 from '../svgs/dot.svg'
 
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
@@ -109,7 +110,11 @@ const PhoneScreen = () => {
         </div>
 
       }
-
+      {
+        <div className="mt-4 flex justify-center align-middle">
+        <img src={d1} alt='dot'/>
+      </div>
+      }
       {
         <div className="grid grid-cols-4 gap-4 mt-4 absolute bottom-2">
           <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
