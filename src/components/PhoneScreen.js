@@ -82,7 +82,9 @@ const PhoneScreen = () => {
         </div>
       )}
       {
-        <div></div>
+        <div>
+          
+        </div>
       }
       {
         <div className='lower-half absolute bottom-2'>

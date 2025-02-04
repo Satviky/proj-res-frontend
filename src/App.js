@@ -4,6 +4,8 @@ import ChatAppScreen from './components/ChatAppScreen';
 // import Chat from './components/Chat';
 import './App.css';
 
+
+
 const App = () => {
   const [screen, setScreen] = useState('PhoneScreen');
   const [selectedChat, setSelectedChat] = useState(null);
@@ -26,6 +28,8 @@ const App = () => {
       {screen === 'ChatAppScreen' && <ChatAppScreen onSelectChat={handleSelectChat} />}
       {/* {screen === 'Chat' && <Chat characterId={selectedChat} />} */}
     </div>
+
+    
   );
 };
 
