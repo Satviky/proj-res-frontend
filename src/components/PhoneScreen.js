@@ -73,14 +73,28 @@ const PhoneScreen = () => {
           New message from Unknown
         </div>
       )}
-      {(notificationVisible || !notificationVisible) && <div className="app-a text-center mt-4">
+      {
+      // (notificationVisible || !notificationVisible) && 
+      <div className="app-a text-center mt-4">
         This is app container
       </div>}
-      {(
-        <div className='grid grid-cols-4 gap-5 bg-black-400'>
-          app Hot-bar
+      
+      {
+        <div className="grid grid-cols-4 gap-4 mt-4 absolute bottom-2">
+        <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
+          <span>1</span>
         </div>
-      )}
+        <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
+          <span>2</span>
+        </div>
+        <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
+          <span>3</span>
+        </div>
+        <div className="app-icon bg-gray-700 p-4 w-14 h-14 rounded cursor-pointer">
+          <span>4</span>
+        </div>
+      </div>
+      }
 
     </div>
   );
