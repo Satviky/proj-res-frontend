@@ -10,6 +10,7 @@ import ph from '../svgs/phone.svg'
 import nxs from '../svgs/nexus.svg'
 import d1 from '../svgs/dot.svg'
 import la from '../svgs/lock.svg'
+import ai1 from '../svgs/settings.svg'
 
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
@@ -105,7 +106,7 @@ const PhoneScreen = () => {
                 <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <img src={la} alt='locked app' />
+                <img src={ai1} alt='Settings app' />
               </div>
             </div>
           </div>
