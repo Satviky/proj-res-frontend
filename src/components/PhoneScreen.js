@@ -4,6 +4,8 @@ import batfull from '../svgs/batfull.svg';
 import batmid2 from '../svgs/batmid2.svg';
 import bathalf from '../svgs/bathalf.svg';
 import batlow from '../svgs/batlow.svg';
+import search from '../svgs/search.svg';
+import messagesic from '../svgs/messages.svg'
 
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
@@ -88,10 +90,11 @@ const PhoneScreen = () => {
           <span>2</span>
         </div>
         <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
-          <span>3</span>
+        <img src={messagesic} alt="Messaging app Icon"/>
         </div>
         <div className="app-icon bg-gray-700 p-4 w-14 h-14 rounded cursor-pointer">
-          <span>4</span>
+        {/* <img src={Phone} alt="Phone Icon"/> */}
+        <span>4</span>
         </div>
       </div>
       }
