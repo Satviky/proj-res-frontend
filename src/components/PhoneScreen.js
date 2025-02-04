@@ -5,7 +5,6 @@ import batmid2 from '../svgs/batmid2.svg';
 import bathalf from '../svgs/bathalf.svg';
 import batlow from '../svgs/batlow.svg';
 
-// npm install tailwindcss @tailwindcss/postcss postcss
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
   const [batteryLevel, setBatteryLevel] = useState('full');
