@@ -33,10 +33,10 @@ const PhoneScreen = () => {
       const dateContainer = document.getElementById('current-date')
       const now = new Date();
       const date = now.getDate();
-      const month = now.getMonth()+1;
+      const month = now.getMonth() + 1;
       const year = now.getFullYear();
-      dateContainer.textContent = `${day},${date}`;
-      
+      dateContainer.textContent = `${date}/${month}/${year}`;
+
     };
 
     const updateBattery = (battery) => {
@@ -55,6 +55,7 @@ const PhoneScreen = () => {
 
     setInterval(updateTime, 1000);
     updateTime();
+    updateDate();
 
     navigator.getBattery().then(updateBattery).catch((error) => {
       console.log("Error: " + error);
@@ -93,11 +94,13 @@ const PhoneScreen = () => {
         <div className="notification bg-blue-600 text-white px-4 py-2 mt-4 rounded cursor-pointer absolute top-8" onClick={handleNotificationClick}>
           New message from Unknown
         </div>
+
+
       )}
       {
-        <div id='date-container' className="text-lg font-bold">
+        <div id='date-container' className="text-5xl text-black font-bold absolute top-20">
           {/* <div className="flex flex-col items-center justify-center h-full mt-12">
-        <div className="text-lg mb-4">{currentDate}</div> */}
+  <div className="text-lg mb-4">{currentDate}</div> */}
           <span id="current-date"></span>
         </div>
       }
