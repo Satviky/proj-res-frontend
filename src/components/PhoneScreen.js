@@ -85,19 +85,19 @@ const PhoneScreen = () => {
       
       {
         <div className="grid grid-cols-4 gap-4 mt-4 absolute bottom-2">
-        <div className="app-icon p-4 w-14 h-14 rounded cursor-pointer app-bg">
+        <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
         <img src={nxs} alt="Phone Icon"/>
         {/* <span>Nexus</span> */}
         </div>
-        <div className="app-icon p-4 w-14 h-14 rounded cursor-pointer app-bg">
+        <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
         <img src={search} alt="Search Icon"/> 
         {/* <span>Browser</span> */}
         </div>
-        <div className="app-icon p-4 w-14 h-14 rounded cursor-pointer app-bg">
+        <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
         <img src={messagesic} alt="Messaging app Icon"/> 
         {/* <span>message</span> */}
         </div>
-        <div className="app-icon p-4 w-14 h-14 rounded cursor-pointer app-bg">
+        <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
         <img src={ph} alt="Phone Icon"/>
         {/* <span>Phone</span> */}
         </div>
