@@ -84,10 +84,10 @@ const PhoneScreen = () => {
       {
         <div className="grid grid-cols-4 gap-4 mt-4 absolute bottom-2">
         <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
-          <span>1</span>
+        <img src={search} alt="Phone Icon"/>
         </div>
         <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
-          <span>2</span>
+        <img src={search} alt="Phone Icon"/>
         </div>
         <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
         <img src={messagesic} alt="Messaging app Icon"/>
