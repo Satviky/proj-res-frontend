@@ -93,7 +93,7 @@ const PhoneScreen = () => {
           <div>
             <div className="mt-4 grid grid-cols-4 gap-4">
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-              <a href="4o4">
+              <a href={"https://www.gsatvik.com"}>
                   <img src={la} alt='locked app' />
               </a>
               </div>
