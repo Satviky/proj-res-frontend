@@ -32,9 +32,9 @@ const App = () => {
     // </div>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<PhoneScreen />}>
-          <Route path='/chat' element={<ChatAppScreen />}/>
-          <Route path='*' element={<epg />}/>
+        <Route path="/" element={<PhoneScreen />}>
+          <Route path="/chat" element={<ChatAppScreen />}/>
+          <Route path="*" element={<epg />}/>
           </Route>
         </Routes>
       </BrowserRouter>
