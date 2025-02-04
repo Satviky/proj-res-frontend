@@ -9,6 +9,7 @@ import messagesic from '../svgs/messages.svg'
 import ph from '../svgs/phone.svg'
 import nxs from '../svgs/nexus.svg'
 import d1 from '../svgs/dot.svg'
+import la from '../svgs/lock.svg'
 
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
@@ -83,28 +84,28 @@ const PhoneScreen = () => {
           <div>
             <div className="mt-4 grid grid-cols-4 gap-4">
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>1</span>
+                <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>2</span>
+                <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>3</span>
+                <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>4</span>
+                <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>5</span>
+                <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>6</span>
+                <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>7</span>
+                <img src={la} alt='locked app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
-                <span>8</span>
+                <img src={la} alt='locked app' />
               </div>
             </div>
           </div>
