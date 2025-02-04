@@ -21,5 +21,6 @@
 }
 
 .s-l{
-    background: center no-repeat url('../images/logo-d.png');
+    background: center no-repeat url('../images/logo.png');
+    background-size: contain;
 }
