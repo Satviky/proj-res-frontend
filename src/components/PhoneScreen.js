@@ -6,6 +6,8 @@ import bathalf from '../svgs/bathalf.svg';
 import batlow from '../svgs/batlow.svg';
 import search from '../svgs/search.svg';
 import messagesic from '../svgs/messages.svg'
+import ph from '../svgs/phone.svg'
+import nxs from '../svgs/nexus.svg'
 
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
@@ -84,7 +86,7 @@ const PhoneScreen = () => {
       {
         <div className="grid grid-cols-4 gap-4 mt-4 absolute bottom-2">
         <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
-        <img src={search} alt="Phone Icon"/>
+        <img src={nxs} alt="Phone Icon"/>
         </div>
         <div className="app-icon bg-gray-700 p-4 rounded cursor-pointer">
         <img src={search} alt="Phone Icon"/>
@@ -93,7 +95,7 @@ const PhoneScreen = () => {
         <img src={messagesic} alt="Messaging app Icon"/>
         </div>
         <div className="app-icon bg-gray-700 p-4 w-14 h-14 rounded cursor-pointer">
-        {/* <img src={Phone} alt="Phone Icon"/> */}
+        <img src={ph} alt="Phone Icon"/>
         <span>4</span>
         </div>
       </div>
