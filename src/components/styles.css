@@ -19,11 +19,7 @@
     border-style: solid;
     border-width: 2px;
 }
-.ic-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .s-l{
     background: url('../images/logo.png');
     background-size: cover;
