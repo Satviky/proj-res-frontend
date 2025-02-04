@@ -18,7 +18,6 @@ import ai2 from '../svgs/notes.svg'
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
   const [batteryLevel, setBatteryLevel] = useState('full');
-  // const [currentDate, setCurrentDate] = useState('');
   const [currentDate, setCurrentDate] = useState('');
 
   useEffect(() => {
