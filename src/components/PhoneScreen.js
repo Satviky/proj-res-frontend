@@ -82,3 +82,8 @@ const PhoneScreen = () => {
 export default PhoneScreen;
 
 // rm -rf node_modules
+// npm install -D tailwindcss
+// npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+// ./node_modules/.bin/tailwindcss init
+// ./node_modules/.bin/tailwindcss init
+
