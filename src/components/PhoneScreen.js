@@ -18,6 +18,8 @@ import ai2 from '../svgs/notes.svg'
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
   const [batteryLevel, setBatteryLevel] = useState('full');
+  // const [currentDate, setCurrentDate] = useState('');
+  const [currentDate, setCurrentDate] = useState('');
 
   useEffect(() => {
     const updateTime = () => {
@@ -26,6 +28,17 @@ const PhoneScreen = () => {
       const hours = String(now.getHours()).padStart(2, '0');
       const minutes = String(now.getMinutes()).padStart(2, '0');
       timeContainer.textContent = `${hours}:${minutes}`;
+    };
+
+    const updateDate = () => {
+      const dateContainer = document.getElementById('current-date')
+      const now = new Date();
+      const date = now.getDate();
+      const month = now.getMonth()+1;
+      const year = now.getFullYear();
+      // setCurrentDate(`${day}, ${date}`);
+      dateContainer.textContent = `${day},${date}`;
+      
     };
 
     const updateBattery = (battery) => {
@@ -84,8 +97,10 @@ const PhoneScreen = () => {
         </div>
       )}
       {
-        <div>
-
+        <div id='date-container' className="text-lg font-bold">
+          {/* <div className="flex flex-col items-center justify-center h-full mt-12">
+        <div className="text-lg mb-4">{currentDate}</div> */}
+          <span id="current-date"></span>
         </div>
       }
       {
@@ -114,9 +129,9 @@ const PhoneScreen = () => {
                 <img src={ai1} alt='Settings app' />
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center s-l">
-                  <a href={"https://www.gsatvik.com"}>
-                    <img src={la} alt='locked app' />
-                  </a>
+                <a href={"https://www.gsatvik.com"}>
+                  <img src={la} alt='locked app' />
+                </a>
               </div>
             </div>
           </div>
