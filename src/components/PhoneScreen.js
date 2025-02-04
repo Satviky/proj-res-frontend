@@ -92,10 +92,11 @@ const PhoneScreen = () => {
         <div className='lower-half absolute bottom-2'>
           <div>
             <div className="mt-4 grid grid-cols-4 gap-4">
-              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center s-l">
-              <a href={"https://www.gsatvik.com"}>
-                  <img src={la} alt='locked app' />
-              </a>
+              <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center ic-a">
+                  <a href={"https://www.gsatvik.com"}>
+                    <img className='s-l' src={la} alt='locked app' />
+                    
+                  </a>
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
                 <img src={la} alt='locked app' />
