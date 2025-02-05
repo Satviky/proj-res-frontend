@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import epg from './4o4'
 import './styles.css'
 import batfull from '../svgs/batfull.svg';
 import batmid2 from '../svgs/batmid2.svg';
@@ -14,6 +13,7 @@ import d1 from '../svgs/dot.svg'
 import la from '../svgs/lock.svg'
 import ai1 from '../svgs/settings.svg'
 import ai2 from '../svgs/notes.svg'
+
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
   const [batteryLevel, setBatteryLevel] = useState('full');
