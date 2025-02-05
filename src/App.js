@@ -9,23 +9,7 @@ import notfound from './components/4o4';
 
 
 const App = () => {
-  // const [screen, setScreen] = useState('PhoneScreen');
-  // const [selectedChat, setSelectedChat] = useState(null);
 
-
-  // const handleSelectApp = (app) => {
-  //   if (app === 'ChatApp') {
-  //     setScreen('ChatAppScreen');
-  //   }
-  // };
-  // const handleNotificationClick = () => {
-  //   setScreen('ChatAppScreen');
-  // };
-
-  // const handleSelectChat = (chatId) => {
-  //   setSelectedChat(chatId);
-  //   setScreen('Chat');
-  // };
 
   return (
     // <div className="App">
