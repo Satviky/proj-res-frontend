@@ -102,6 +102,7 @@ const PhoneScreen = () => {
             <div className="mt-4 grid grid-cols-4 gap-4">
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
                 <img src={la} alt='locked app' />
+                {/* <Link to="/contact">Contact</Link> */}
               </div>
               <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
                 <img src={la} alt='locked app' />
@@ -142,7 +143,8 @@ const PhoneScreen = () => {
             </div>
             <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
               <img src={messagesic} alt="Messaging app Icon" />
-              {/* <span>message</span> */}
+              {/* <span>message</span> 
+              <Link to="/contact">Contact</Link>*/}
             </div>
             <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
               <img src={ph} alt="Phone Icon" />

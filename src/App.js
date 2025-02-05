@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PhoneScreen from './components/PhoneScreen';
 import ChatUI from './components/ChatUI';
 // import Chat from './components/Chat';
@@ -17,14 +18,14 @@ const App = () => {
     //   {screen === 'ChatAppScreen' && <ChatAppScreen onSelectChat={handleSelectChat} />}
     //   {/* {screen === 'Chat' && <Chat characterId={selectedChat} />} */}
     // </div>
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<PhoneScreen />}>
           <Route path="/chat" element={<ChatUI />} />
           <Route path="*" element={<notfound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
 
 
   );
