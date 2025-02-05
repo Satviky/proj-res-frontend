@@ -14,9 +14,21 @@ import la from '../svgs/lock.svg'
 import ai1 from '../svgs/settings.svg'
 import ai2 from '../svgs/notes.svg'
 
+function getDate() {
+  const datecont = document.getElementById('Current-date');
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+  const date = today.getDate();
+  // datecont.textContent = `${date}/${month}/${year}`;
+  return `${date}/${month}/${year}`;
+}
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
   const [batteryLevel, setBatteryLevel] = useState('full');
+  const [currentDate, setCurrentDate] = useState(getDate());
+  
+
   useEffect(() => {
     const updateTime = () => {
       const timeContainer = document.getElementById('current-time');
@@ -25,6 +37,7 @@ const PhoneScreen = () => {
       const minutes = String(now.getMinutes()).padStart(2, '0');
       timeContainer.textContent = `${hours}:${minutes}`;
     };
+    
     const updateBattery = (battery) => {
       const batl = battery.level * 100;
       if (batl > 75) {
@@ -39,6 +52,7 @@ const PhoneScreen = () => {
     };
     setInterval(updateTime, 1000);
     updateTime();
+    // getDate();
 
     navigator.getBattery().then(updateBattery).catch((error) => {
       console.log("Error: " + error);
@@ -60,7 +74,9 @@ const PhoneScreen = () => {
       default:
         return batfull;
     }
+    
   };
+  
   return (
     <div className="phone-screen bg-gray-900 text-white h-screen flex flex-col items-center justify-center relative">
       <div className="status-bar flex justify-between items-center w-full px-4 py-2 bg-gray-800 absolute top-0 left-0">
@@ -76,7 +92,9 @@ const PhoneScreen = () => {
           <div className="notification bg-blue-600 text-white px-4 py-2 mt-4 rounded cursor-pointer absolute top-8" onClick={handleNotificationClick}> New message from Unknown </div>
         )}
       {
-        <div> </div>
+        <div id="date-cont" className="text-5xl font-bold text-black absolute top-20">
+          <span id="current-date">{currentDate}</span>
+        </div>
       }
       {
         <div className='lower-half absolute bottom-2'>
