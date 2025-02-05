@@ -20,7 +20,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PhoneScreen />}>
-          <Route path="/chat/:characterId" element={<ChatUI />} />
+          <Route path="/chat" element={<ChatUI />} />
           <Route path="*" element={<notfound />} />
         </Route>
       </Routes>
