@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import './styles.css'
 import batfull from '../svgs/batfull.svg';
 import batmid2 from '../svgs/batmid2.svg';
@@ -141,11 +142,11 @@ const PhoneScreen = () => {
               <img src={search} alt="Search Icon" />
               {/* <span>Browser</span> */}
             </div>
-            <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
+            <Link to="/chat" className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
               <img src={messagesic} alt="Messaging app Icon" />
-              {/* <span>message</span> 
-              <Link to="/contact">Contact</Link>*/}
-            </div>
+              {/* <span>message</span> */}
+              {/* <Link to="/contact">Contact</Link> */}
+            </Link>
             <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
               <img src={ph} alt="Phone Icon" />
               {/* <span>Phone</span> */}
@@ -154,6 +155,7 @@ const PhoneScreen = () => {
         </div>}
       {
         // <nav/> 
+        <Outlet/>
       }
     </div>
   );
