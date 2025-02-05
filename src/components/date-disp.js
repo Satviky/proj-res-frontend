@@ -1,27 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-const getCurrentDateAndDay = () => {
-  const now = new Date();
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  return now.toLocaleDateString(undefined, options);
-};
+function getDate() {
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+  const date = today.getDate();
+  return `${month}/${date}/${year}`;
+}
 
-const Home = () => {
-  const [dateAndDay, setDateAndDay] = useState(getCurrentDateAndDay());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setDateAndDay(getCurrentDateAndDay());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
+function datedis() {
+  const [currentDate, setCurrentDate] = useState(getDate());
   return (
-    <div className="flex flex-col items-center justify-center h-full">
-      <h1 className="text-xl">{dateAndDay}</h1>
-      <p>Welcome to the Home Page!</p>
+    <div>
+      <h1>Today's Date</h1>
+      <p>{currentDate}</p>
     </div>
   );
-};
+}
 
-export default Home;
+export default datedis;
