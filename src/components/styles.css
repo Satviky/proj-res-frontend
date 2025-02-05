@@ -12,6 +12,10 @@
     overflow: hidden;
 }
 
+.notification{
+    z-index: 1;
+}
+
 
 .app-icon {
     background-color: #FFFAFA;

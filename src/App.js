@@ -4,7 +4,7 @@ import PhoneScreen from './components/PhoneScreen';
 import ChatAppScreen from './components/ChatAppScreen';
 // import Chat from './components/Chat';
 import './App.css';
-import epg from './components/4o4';
+import notfound from './components/4o4';
 
 
 
@@ -37,7 +37,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<PhoneScreen />}>
           <Route path="/chat" element={<ChatAppScreen />} />
-          <Route path="*" element={<epg />} />
+          <Route path="*" element={<notfound />} />
         </Route>
       </Routes>
     </BrowserRouter>

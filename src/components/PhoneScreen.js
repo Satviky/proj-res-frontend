@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import epg from './4o4'
 import './styles.css'
 import batfull from '../svgs/batfull.svg';
@@ -20,6 +20,7 @@ const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
   const [batteryLevel, setBatteryLevel] = useState('full');
   const [currentDate, setCurrentDate] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     const updateTime = () => {
