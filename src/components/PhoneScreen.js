@@ -14,6 +14,7 @@ import d1 from '../svgs/dot.svg'
 import la from '../svgs/lock.svg'
 import ai1 from '../svgs/settings.svg'
 import ai2 from '../svgs/notes.svg'
+import App from '../App';
 
 const PhoneScreen = () => {
   const [notificationVisible, setNotificationVisible] = useState(true);
@@ -64,6 +65,7 @@ const PhoneScreen = () => {
 
   const handleNotificationClick = () => {
     setNotificationVisible(false);
+    
   };
   const getBatteryIcon = () => {
     switch (batteryLevel) {

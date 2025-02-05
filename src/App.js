@@ -18,6 +18,9 @@ const App = () => {
       setScreen('ChatAppScreen');
     }
   };
+  const handleNotificationClick = () => {
+    setScreen('ChatAppScreen');
+  };
 
   const handleSelectChat = (chatId) => {
     setSelectedChat(chatId);
@@ -33,17 +36,17 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PhoneScreen />}>
-          <Route path="/chat" element={<ChatAppScreen />}/>
-          <Route path="*" element={<epg />}/>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+          <Route path="/chat" element={<ChatAppScreen />} />
+          <Route path="*" element={<epg />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 
 
-        );
+  );
 };
 
-        export default App;
+export default App;
 
 
 
