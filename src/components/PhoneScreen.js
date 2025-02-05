@@ -83,7 +83,7 @@ const PhoneScreen = ({ onNotificationClick })  => {
       case 'low':
         return batlow;
       default:
-        return batfull;
+        return batlow;
     }
   };
 
