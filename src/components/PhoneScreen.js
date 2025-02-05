@@ -14,9 +14,9 @@ import d1 from '../svgs/dot.svg'
 import la from '../svgs/lock.svg'
 import ai1 from '../svgs/settings.svg'
 import ai2 from '../svgs/notes.svg'
-import App from '../App';
+import ChatUI from './ChatUI'
 
-const PhoneScreen = () => {
+const PhoneScreen = ({ onNotificationClick })  => {
   const [notificationVisible, setNotificationVisible] = useState(true);
   const [batteryLevel, setBatteryLevel] = useState('full');
   const [currentDate, setCurrentDate] = useState('');
@@ -66,6 +66,10 @@ const PhoneScreen = () => {
 
   const handleNotificationClick = () => {
     setNotificationVisible(false);
+    navigate('/chat');
+    if (onNotificationClick) {
+      onNotificationClick();
+    }
     
   };
   const getBatteryIcon = () => {
@@ -156,8 +160,9 @@ const PhoneScreen = () => {
               {/* <span>Browser</span> */}
             </div>
             <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
-              <img src={messagesic} alt="Messaging app Icon" />
-              {/* <span>message</span> */}
+              <Link to="/chat">
+                <img src={messagesic} alt="Messaging app Icon" />
+              </Link>
             </div>
             <div className="app-icon p-4 w-14 h-14 rounded-3xl cursor-pointer app-bg">
               <img src={ph} alt="Phone Icon" />
