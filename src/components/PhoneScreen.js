@@ -101,10 +101,9 @@ const PhoneScreen = () => {
                             <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center">
                                 <img src={ai1} alt='Settings app' />
                             </div>
-                            <div className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center s-l">
-                                <a href={"https://www.gsatvik.com"}>
-                                    <img src={la} alt='locked app' /></a>
-                            </div>
+                            <a href={"https://www.gsatvik.com"} className="app-icon h-14 w-14 cursor-pointer rounded-3xl p-4 text-center s-l">
+                                    <img src={la} alt='locked app' />
+                            </a>
                         </div>
                     </div>
                     {/* Separator */}
