@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css'
+import batfull from '../svgs/batfull.svg';
+import batmid2 from '../svgs/batmid2.svg';
+import bathalf from '../svgs/bathalf.svg';
+import batlow from '../svgs/batlow.svg';
 
 const StatusBar = () => {
     const [batteryLevel, setBatteryLevel] = useState('full');
