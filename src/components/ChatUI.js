@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Messages from './Messages';
 import Options from './Options';
-import statusBar from './StatusBar'
+import './ChatUI.css';
 
 const initialChatData = {
     orion: [
@@ -18,6 +18,11 @@ const ChatUI = () => {
       "Wait, what happened to Ollie?", 
       "No way! This sounds dangerous."
   ]);
+
+  useEffect(() => {
+      // Update messages if characterId changes
+      setMessages(initialChatData[characterId] || []);
+  }, [characterId]);
 
   const handleUserResponse = (response) => {
       setMessages([...messages, { sender: 'user', text: response }]);
