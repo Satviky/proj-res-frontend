@@ -33,10 +33,12 @@ const PhoneScreen = () => {
   useEffect(() => {
     const updateTime = () => {
       const timeContainer = document.getElementById('current-time');
-      const now = new Date();
-      const hours = String(now.getHours()).padStart(2, '0');
-      const minutes = String(now.getMinutes()).padStart(2, '0');
-      timeContainer.textContent = `${hours}:${minutes}`;
+      if (timeContainer) {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        timeContainer.textContent = `${hours}:${minutes}`;
+      }
     };
     
     const updateBattery = (battery) => {
