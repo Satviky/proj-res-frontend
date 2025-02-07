@@ -63,8 +63,16 @@ const ChatUI = () => {
       </div>
       <div className="p-4 border-t border-gray-800 bg-gray-800">
         <div className="flex">
-           <Options options={options} handleResponse={handleUserResponse} />
-          
+          <input 
+            type="text" 
+            value={input} 
+            onChange={handleInputChange} 
+            className="flex-grow p-2 rounded-l-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-blue-500"
+            placeholder="Type a message"
+          />
+          <button onClick={handleSendMessage} className="bg-blue-500 text-white px-4 py-2 rounded-r-lg">
+            Send
+          </button>
         </div>
       </div>
     </div>
