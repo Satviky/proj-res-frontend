@@ -10,10 +10,11 @@
     border-radius: 20px;
     margin: auto;
     overflow: hidden;
+    z-index:1;
 }
 
 .notification{
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -29,3 +30,6 @@
     background-size: cover;
 }
 
+.chat-app{
+    z-index: 4;
+}
