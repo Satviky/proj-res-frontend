@@ -43,7 +43,7 @@ const ChatUI = () => {
       }
       // Add other states here
     };
-    return states[userMessage] || { message: "I didn’t understand that.", options: [] };
+    return states[userMessage] || { message: "Orion is offline", options: [] };
   };
 
   return (
