@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 import './styles.css'
 import batfull from '../svgs/batfull.svg';
@@ -28,6 +28,7 @@ const PhoneScreen = () => {
   const [batteryLevel, setBatteryLevel] = useState('full');
   const [currentDate, setCurrentDate] = useState(getDate());
   const navigate = useNavigate();
+  const location = useLocation
 
   useEffect(() => {
     const updateTime = () => {
