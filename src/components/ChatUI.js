@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Messages from './Messages';
 import Options from './Options';
-import statusBar from './StatusBar'
+import StatusBar from './StatusBar';
 
 const initialChatData = {
     orion: [
@@ -19,11 +19,21 @@ const ChatUI = () => {
       "No way! This sounds dangerous."
   ]);
 
+  useEffect(() => {
+    if (!characterId || !initialChatData[characterId]) {
+      console.error('Invalid characterId:', characterId);
+    }
+  }, [characterId]);
+
   const handleUserResponse = (response) => {
-      setMessages([...messages, { sender: 'user', text: response }]);
+      setMessages(prevMessages => [...prevMessages, { sender: 'user', text: response }]);
       const nextState = getNextState(response);
-      setMessages(prevMessages => [...prevMessages, { sender: characterId, text: nextState.message }]);
-      setOptions(nextState.options);
+      if (nextState) {
+        setMessages(prevMessages => [...prevMessages, { sender: characterId, text: nextState.message }]);
+        setOptions(nextState.options);
+      } else {
+        console.error('Invalid state for response:', response);
+      }
   };
 
   const getNextState = (userMessage) => {
@@ -43,7 +53,7 @@ const ChatUI = () => {
 
   return (
       <div className="chat-ui bg-gray-900 text-white h-screen flex flex-col items-center justify-center">
-          <h1 className="text-2xl font-bold">Chat with {characterId.charAt(0).toUpperCase() + characterId.slice(1)}</h1>
+          <h1 className="text-2xl font-bold">Chat with {characterId && characterId.charAt(0).toUpperCase() + characterId.slice(1)}</h1>
           <div className="chat-box bg-gray-800 p-4 rounded mt-4 w-3/4">
               <Messages messages={messages} />
               <Options options={options} handleResponse={handleUserResponse} />
@@ -53,4 +63,3 @@ const ChatUI = () => {
 };
 
 export default ChatUI;
-
