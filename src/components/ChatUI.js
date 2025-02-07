@@ -47,7 +47,7 @@ const ChatUI = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gray-900 text-white">
+    <div className="flex flex-col h-screen bg-gray-900 text-white chat-app">
       <div className="flex-grow overflow-y-auto p-4">
         {messages.map((message, index) => (
           <div key={index} className={`my-2 p-3 max-w-xs rounded-lg ${message.sender === 'user' ? 'bg-blue-500 text-white self-end' : 'bg-gray-700 text-white self-start'}`}>
