@@ -92,7 +92,7 @@ const PhoneScreen = () => {
       </div>
       {
         notificationVisible && (
-          <div className="notification bg-blue-600 text-white px-4 py-2 mt-4 rounded cursor-pointer absolute top-8" onClick={handleNotificationClick}> New message from Unknown </div>
+          <div className="notification not-1 bg-blue-600 text-white px-4 py-2 mt-4 rounded cursor-pointer absolute top-8" onClick={handleNotificationClick}> New message from Unknown </div>
         )}
       {
         <div id="date-cont" className="text-5xl font-bold text-black absolute top-20">
