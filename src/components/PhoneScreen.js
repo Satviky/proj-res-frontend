@@ -83,7 +83,7 @@ const PhoneScreen = () => {
   };
 
   return (
-    <div className="phone-screen bg-gray-900 text-white h-screen flex flex-col items-center justify-center relative">
+    <div className="phone-screen bg-gray-900 text-white flex flex-col items-center justify-center relative">
       <div className="status-bar flex justify-between items-center w-full px-4 py-2 bg-gray-800 absolute top-0 left-0">
         <div id="time-container" className="text-lg font-bold">
           <span id="current-time"></span>

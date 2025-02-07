@@ -5,6 +5,7 @@
 
 .phone-screen {
     width: 360px;
+    height: 98vh;
     background: center no-repeat url(../images/nezuko-butterfly.jpg);
     background-size: cover;
     border-radius: 20px;
