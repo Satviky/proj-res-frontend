@@ -19,7 +19,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<PhoneScreen />}>
-          <Route path="/chat" element={<ChatUI />} />
+          <Route path="/chat/:characterId" element={<ChatUI />} />
           {/* <Route path="/projects" element={<ProjectPage />} /> */}
           <Route path="*" element={<notfound />} />
         </Route>
