@@ -36,13 +36,25 @@ const ChatUI = () => {
 
   const getNextState = (userMessage) => {
     const states = {
-      'Wait, what happened to Ollie?': {
-        message: "He was working on something important and now he's gone missing. The police think I’m involved, but I need to find him and clear my name. Use the Nexus app to access his device.",
-        options: ['How do you know this?', 'Where is Ollie?']
+      'Yes, why and how do you know Ollie?': {
+        message: "Kimberly please. I am accused of kidnapping my boss and they are thinking that i have killed him too. His body or his whereabouts is not known but they think that I am the one who is behind all this. Please, help me.",
+        options: ['Wait, What?', 'Where is Ollie?']
       },
-      'No way! This sounds dangerous.': {
-        message: "Trust me, we need you. Carlos would have wanted us to work together. Your name is the password to unlock Ollie's device using the 'Nexus' app.",
-        options: ['Okay, I\'ll do it.', 'Is this some kind of prank?']
+      'Sorry, but I don\'t think i will be of some help.': {
+        message: "Kimberly please. I am accused of kidnapping my boss and they are thinking that i have killed him too. His body or his whereabouts is not known but they think that I am the one who is behind all this. Please, help me.",
+        options: ['Wait, What?', 'Where is Ollie?']
+      },
+      'Wait, What?': {
+        message: "Ollie was the one who was working on this case. He told me already that maybe they will start to think that I murdered my boss and this is why he gave me this phone for emergency. Trust me this is not what it looks like. I am really being framed and I am not the one behind this.",
+        options: ['You do realise that you are repeating one thing many times?', 'I understand your situation you don\'t need to reframe it in 4-5 lines']
+      },
+      'Where is Ollie?': {
+        message: " I don\'t know where he went. I only know that before he got vanished he gave me this phone and i started it and it had only one contact saved and I texted on that number.",
+        options: ['I see. Is there anything else in this phone?', 'Where do you think he can be?']
+      },
+      'You do realise that you are repeating one thing many times?': {
+        message: " I am sorry for that. I also found a small paper in the backcover it have something written on it. X:16.02,Y:20.26",
+        options: ['I see. Is there anything else in this phone?', 'Where do you think he can be?']
       }
       // Add other states here
     };
