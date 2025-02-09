@@ -54,7 +54,19 @@ const ChatUI = () => {
       },
       'You do realise that you are repeating one thing many times?': {
         message: " I am sorry for that. I also found a small paper in the backcover it have something written on it. X:16.02,Y:20.26",
-        options: ['I see. Is there anything else in this phone?', 'Where do you think he can be?']
+        options: ['I see. Is there anything else in this phone?', 'Do you know which place coordinates are these?']
+      },
+      'I understand your situation you don\'t need to reframe it in 4-5 lines': {
+        message: " I am sorry for that. I also found a small paper in the backcover it have something written on it. X:16.02,Y:20.26",
+        options: ['I see. Is there anything else in this phone?', 'Do you know which place coordinates are these?']
+      },
+      'I see. Is there anything else in this phone?': {
+        message: " Except for the paper where \"X:16.02,Y:20.26\" is written, I can't find anything in this.",
+        options: ['I think it\'s coordinate for some place.', 'Do you know which place coordinates are these?']
+      },
+      'Where do you think he can be?': {
+        message: "I have no idea, but in this phone there is a paper. It says \"X:16.02,Y:20.26\". I don't know what it is. ",
+        options: ['I think it\'s coordinate for some place.', 'Do you know which place coordinates are these?']
       }
       // Add other states here
     };
