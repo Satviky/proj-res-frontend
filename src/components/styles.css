@@ -32,8 +32,9 @@
 
 .chat-app{
     z-index: 4;
+    width: 360px;
 }
 
 .set-screen{
-    height: 96vh;
+    height: 94vh;
 }
