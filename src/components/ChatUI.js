@@ -11,7 +11,7 @@ import Options from './Options';
 
 const initialChatData = {
   orion: [
-    { sender: 'Orion', text: "Hey, I am Orion. I need your help. It's an emergency. \n Ollie gave me a deck of Uno card and in one of the card your number was written" }
+    { sender: 'Orion', text: "Hey, I am Orion. I need your help." }
   ],
   // Add initial messages for other characters here
 };
