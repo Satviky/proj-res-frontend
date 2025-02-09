@@ -11,7 +11,10 @@ import Options from './Options';
 
 const initialChatData = {
   orion: [
-    { sender: 'Orion', text: "Hey, I am Orion. I need your help." }
+    { sender: 'Orion', text: "Hey, I am Orion. I need your help. Ollie gave me this phone to use in emergency and when i opened it, it had only your number. you are kimberly Goodall, right?" }
+  ],
+  kira: [
+    {sender: 'Kira', text:"Hi, I am Kira. I am just texting to reassure you that Orion will be safe here. Ollie already told me to make this place ready to accomodate Orion."}
   ],
   // Add initial messages for other characters here
 };
@@ -20,8 +23,8 @@ const ChatUI = () => {
   const { characterId } = useParams();
   const [messages, setMessages] = useState(initialChatData[characterId] || []);
   const [options, setOptions] = useState([
-    "Wait, what happened to Ollie?", 
-    "No way! This sounds dangerous."
+    "Yes, why and how do you know Ollie?", 
+    "Sorry, but I don't think i will be of some help."
   ]);
 
   const handleOptionClick = (option) => {
