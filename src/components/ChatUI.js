@@ -5,10 +5,6 @@ import Messages from './Messages';
 import Options from './Options';
 
 
-// New update will be tried
-
-
-
 const initialChatData = {
   orion: [
     { sender: 'Orion', text: "Hey, I am Orion. I need your help. Ollie gave me this phone to use in emergency and when i opened it, it had only your number. you are kimberly Goodall, right?" }
@@ -16,7 +12,6 @@ const initialChatData = {
   kira: [
     {sender: 'Kira', text:"Hi, I am Kira. I am just texting to reassure you that Orion will be safe here. Ollie already told me to make this place ready to accomodate Orion."}
   ],
-  // Add initial messages for other characters here
 };
 
 const ChatUI = () => {
