@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PhoneScreen from './components/PhoneScreen';
 import ChatUI from './components/ChatUI';
