@@ -59,7 +59,7 @@ const ChatUI = () => {
         message: " Except for the paper where \"X:16.02,Y:20.26\" is written, I can't find anything in this.",
         options: ['I think it\'s coordinate for some place.', 'Do you know which place coordinates are these?']
       },
-      'Where do you think he can be?': {
+      'Where do you think he can be? Maybe he left some clue': {
         message: "I have no idea, but in this phone there is a paper. It says \"X:16.02,Y:20.26\". I don't know what it is. ",
         options: ['I think it\'s coordinate for some place.', 'Do you know which place coordinates are these?']
       }
